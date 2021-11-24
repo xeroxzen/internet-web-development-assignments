@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Confirmation Box</title>
+
+	
+</head>
+
+<body onload="confirmDialog()">
+
+<h1>Confirmation Dialog</h1>
+
+<script type="text/javascript">
+		function confirmDialog(){
+			var retval = confirm("Do you want to continue?")
+
+			if (retval == true) {
+				alert("User wants to continue.");
+				return true;
+			} else {
+				alert("User does not want to continue.")
+				return false
+			}
+		}
+		
+	</script>
+</body>
+</html>
